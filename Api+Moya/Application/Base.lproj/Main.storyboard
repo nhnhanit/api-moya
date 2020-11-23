@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Api_Moya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Api &amp; Moya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSO-uQ-yK6">
+                                <rect key="frame" x="163.5" y="144" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVD-Da-ek9">
+                                <rect key="frame" x="157" y="265" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="dc6-HK-Vzp"/>
+                                </constraints>
+                                <state key="normal" title="Get array"/>
+                                <connections>
+                                    <action selector="getDataButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lro-5s-0ID"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRX-0l-hZE">
+                                <rect key="frame" x="157" y="345" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="yLZ-UH-man"/>
+                                </constraints>
+                                <state key="normal" title="Get detail"/>
+                                <connections>
+                                    <action selector="getDetailButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4RE-Vj-6xn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qSO-uQ-yK6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="JVs-UO-OMe"/>
+                            <constraint firstItem="MRX-0l-hZE" firstAttribute="top" secondItem="RVD-Da-ek9" secondAttribute="bottom" constant="50" id="XhD-lr-FrI"/>
+                            <constraint firstItem="RVD-Da-ek9" firstAttribute="top" secondItem="qSO-uQ-yK6" secondAttribute="bottom" constant="100" id="f2f-nw-BrV"/>
+                            <constraint firstItem="qSO-uQ-yK6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gVP-6O-PsM"/>
+                            <constraint firstItem="RVD-Da-ek9" firstAttribute="centerX" secondItem="qSO-uQ-yK6" secondAttribute="centerX" id="rAI-gz-Rcs"/>
+                            <constraint firstItem="MRX-0l-hZE" firstAttribute="centerX" secondItem="RVD-Da-ek9" secondAttribute="centerX" id="wiJ-2R-ARF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getDataButton" destination="RVD-Da-ek9" id="hAP-g1-T4t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
